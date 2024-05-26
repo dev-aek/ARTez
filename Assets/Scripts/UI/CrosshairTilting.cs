@@ -32,7 +32,7 @@ public class CrosshairTilting : MonoBehaviour
 
     public IEnumerator ResetTilt(RectTransform crosshair)
     {
-        float duration = 0.2f;
+        float duration = 0.03f;
         float time = 0;
         Vector3 initialPosition = crosshair.transform.localPosition;
         Vector3 zeroPosition = new Vector3(0, 0, initialPosition.z); // Reset to zero on x and y, keep z unchanged
