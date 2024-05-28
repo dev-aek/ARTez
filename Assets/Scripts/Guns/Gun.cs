@@ -106,4 +106,9 @@ public abstract class Gun : MonoBehaviour
             muzzleFlash.Play();
         }
     }
+
+    public void SetMaxAmmo()
+    {
+        currentAmmo = maxAmmo;
+    }
 }

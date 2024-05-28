@@ -29,6 +29,7 @@ public class Rifle : Gun
             PlayMuzzleFlashParticle();
             lastShotTime = Time.time;
             shootCount++;
+            StatsCalculator.Instance.usedBulletCount++;
             StartCoroutine(CrosshairTilting.Instance.TiltCrossHair(crosshair, shootCount, maxTilt));
             currentAmmo--;
             ShowCurrentAmmo(); // Update the ammo display each time a bullet is fired
