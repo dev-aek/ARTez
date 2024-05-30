@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] public string[] m_StatTexts;
     [SerializeField] private GameObject m_GameUIPanel;
     [SerializeField] private GameObject m_StatPanel;
+    [SerializeField] private RectTransform crosHair;
 
     private float m_TimerCount;
     private bool isRunning = false;
@@ -55,6 +56,7 @@ public class UIManager : MonoBehaviour
     {
         m_GameUIPanel.SetActive(true);
         m_StatPanel.SetActive(true);
+        crosHair.gameObject.SetActive(false);
     }
     void DisplayTime(float timeToDisplay)
     {
